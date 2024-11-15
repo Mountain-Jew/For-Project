@@ -10,9 +10,13 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.12"
+prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 project = "project_func.scripts.main_base:main"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
 
 [build-system]
 requires = ["poetry-core"]

@@ -5,6 +5,8 @@ project:
 build:
 	poetry build
 publish:
-	poetry publish --dry-run
+	publish --dry-run
 package-install:
-	python3 -m pip install dist/*.whl
+	pipx install dist/*.whl
+lint:
+	poetry run flake8 project
